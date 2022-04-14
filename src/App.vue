@@ -1,9 +1,11 @@
 <template>
     <header>
-      <HeaderNav />
-      <SearchAutocomplete
-        :items="this.info"
-      />
+      <div class="header-inner">
+        <HeaderNav />
+        <SearchAutocomplete
+          :items="this.info"
+        />
+      </div>
     </header>
 </template>
 
@@ -46,6 +48,11 @@ export default {
 </script>
 
 <style>
+
+* {
+  box-sizing: border-box;
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -62,7 +69,13 @@ html, body {
 header {
   background-color: #4c873c;
   margin: 0;
-  padding: 0.8rem 1.5rem;
+  padding: 1rem 1.5rem;
+}
+
+.header-inner {
+    width: 100%;
+    margin: 0;
+    padding: 0px;
 }
 
 </style>

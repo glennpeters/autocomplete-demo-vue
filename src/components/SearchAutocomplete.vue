@@ -93,21 +93,26 @@ export default {
 </script>
 
 <style>
+
+    .autocomplete {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
     input[type="text"] {
         background-color: #fff; 
         padding: 0.8rem;
-        width: 90%;
+        width: 100%;
         border: none;
         border-radius: 0.2rem;
+        padding-right: 3rem;
     }
 
     ::placeholder {
         color: #999;
     }
-
-  .autocomplete {
-    position: relative;
-  }
 
   .autocomplete-results {
     padding: 0;
@@ -120,9 +125,9 @@ export default {
     background-color: #fff;
     position: absolute;
     /* Ideally, these would be directly tied to the padding and spacing of the input, probably with variables */
-    top: 2.7rem;
-    left: 1.7rem;
-    right: 1.7rem;
+    top: 2.6rem;
+    left: 0.2rem;
+    right: 0.2rem;
   }
 
   .autocomplete-result {

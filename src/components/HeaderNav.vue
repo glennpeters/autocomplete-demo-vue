@@ -1,16 +1,15 @@
 <template>
   <nav>
     <figure>
-      <!-- <img src="" /> -->
-      Platt
+      <a href="#"><img src="@/assets/img/logo.png" /></a>
     </figure>
-    <ul>
-      <li>S</li>
-      <li>C</li>
-      <li>P</li>
-      <li>M</li>
-    </ul>
 
+    <ul>
+      <li><a href="#"><img src="@/assets/ic/white/ic_search.png" /></a></li>
+      <li><a href="#"><img src="@/assets/ic/white/ic_shopping_cart.png" /></a></li>
+      <li><a href="#"><img src="@/assets/ic/white/ic_person.png" /></a></li>
+      <li><a href="#"><img src="@/assets/ic/white/ic_menu.png" /></a></li>
+    </ul>
   </nav>
 </template>
 
@@ -27,14 +26,19 @@ export default {
 <style scoped>
 
 nav {
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding: 0 0 0.6rem;
   width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 
 figure {
   display: inline-flex;
   flex: 1 1 auto;
+  padding: 0;
+  margin: 0;
 }
 
 ul {
@@ -44,11 +48,20 @@ ul {
 
   list-style-type: none;
   padding: 0;
+  margin: 0;
+  justify-content: flex-end;
 }
-li {
+ul li {
   display: inline-flex;
-  flex: 1 1 auto;
-  margin: 0 10px;
+  flex: 0 0 auto;
+  padding: 0;
+  margin: 0;
+  width: 2.5rem;
+  justify-content: flex-end;
+}
+
+ul li img {
+  display: inline-block;
 }
 
 </style>
