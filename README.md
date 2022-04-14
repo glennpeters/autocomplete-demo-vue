@@ -12,7 +12,7 @@ Customized to hide the autocomplete on an empty search field.
 
 Short term TODO:
 - [x] Don't display autofill on blank input
-- [ ] https://v3.router.vuejs.org/
+- [ ] https://www.npmjs.com/package/vue-axios
 
 
 
