@@ -1,7 +1,7 @@
 <template>
   <div class="autocomplete">
     <input
-        v-model="search"
+        v-model="searchTerm"
         @input="onChange"
         @keydown.down="onArrowDown"
         @keydown.up="onArrowUp"
@@ -38,7 +38,7 @@ export default {
   },
   data() {
     return {
-      search: '',
+      searchTerm: '',
       results: [],
       isOpen: false,
       arrowCounter: -1,
@@ -53,17 +53,17 @@ export default {
   },  
   methods: {
     filterResults() {
-        this.results = this.items.filter(item => item.toLowerCase().indexOf(this.search.toLowerCase()) > -1);
+        this.results = this.items.filter(item => item.toLowerCase().indexOf(this.searchTerm.toLowerCase()) > -1);
     },
     onChange() {
-        console.log("onChange");
+        console.log("onChange: searchTerm = ", this.searchTerm);
         this.filterResults();
-        this.isOpen = true;
-        // ...
+        // this.isOpen = true;
+        this.isOpen = (this.searchTerm !== '');
     },
     setResult(result) {
-        console.log("setResult");
-        this.search = result;
+        // console.log("setResult");
+        this.searchTerm = result;
         this.isOpen = false;
         this.arrowCounter = -1;
     },
@@ -83,7 +83,7 @@ export default {
         }
     },
     onEnter() {
-        this.search = this.results[this.arrowCounter];
+        this.searchTerm = this.results[this.arrowCounter];
         this.arrowCounter = -1;
         this.isOpen = false;
     },    

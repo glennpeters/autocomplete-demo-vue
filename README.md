@@ -2,13 +2,17 @@
 
 Building towards the guidelines below, limiting the scope because of external time pressures.
 
+This is a demonstration of principles, not an attempt to manage pixel-perfect design.
+
 Using an <a href="https://www.digitalocean.com/community/tutorials/vuejs-vue-autocomplete-component#step-1-setting-up-the-project">Autocomplete tutorial for time management</a>.
 
 I had implemented autocomplete from scratch previously, but it's general good practice to use existing code to speed things up.
 
+Customized to hide the autocomplete on an empty search field.
+
 Short term TODO:
- * Don't display autofill on blank input
- * https://v3.router.vuejs.org/
+- [x] Don't display autofill on blank input
+- [ ] https://v3.router.vuejs.org/
 
 
 
