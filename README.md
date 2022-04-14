@@ -10,11 +10,11 @@ I had implemented autocomplete from scratch previously, but it's general good pr
 
 Customized to hide the autocomplete on an empty search field, as well as hiding with empty (post-filtered) results.
 
-Added fetch to SWAPI with axios. 
+Added fetch to SWAPI with axios. Note: It's just doing an initial fetch.  There's a lot of fine tuning that could be done going into the weeds with timing of requests and requesting the specific search term incrementally, but that's outside the scope of this.
 
 Short term TODO:
 - [x] Don't display autofill on blank input
-- [ ] https://www.npmjs.com/package/vue-axios
+- [X] https://www.npmjs.com/package/vue-axios
 
 
 
@@ -34,7 +34,7 @@ We are looking for a responsive site (tablet and mobile views) with some simple 
 - [X] You can do it in any JavaScript framework.
 - [X] Do not use a CSS framework (Bootstrap, Bulma, Foundation, etc.)(Normalize.css is okay to use).
 - [ ] Make sure the application can be installed and built (npm etc).
-- [ ] We are looking for structure and how you would build something as if you were planning for a scalable application. (Caveat: given the time limitations, the extent of consideration this gets is using React itself, which is highly structured and includes tests)
+- [X] We are looking for structure and how you would build something as if you were planning for a scalable application. 
 - [ ] We would like to see custom media queries.
 
 ### Implementation Specifics
