@@ -1,16 +1,30 @@
 <template>
-  <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-  <Home msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <SearchAutocomplete
+      :items="[
+        'Apple',
+        'Banana',
+        'Orange',
+        'Mango',
+        'Pear',
+        'Peach',
+        'Grape',
+        'Tangerine',
+        'Pineapple'
+      ]"
+    />
+  </div>
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
-import Home from './components/Home.vue';
+// import Home from './components/Home.vue';
+import SearchAutocomplete from './components/SearchAutocomplete.vue';
 
 export default {
   name: 'App',
   components: {
-    Home
+    SearchAutocomplete
   }
 }
 </script>
