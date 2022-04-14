@@ -1,16 +1,17 @@
 <template>
-  <div id="app">
-    <SearchAutocomplete
-      :items="this.info"
-    />
-  </div>
+    <header>
+      <HeaderNav />
+      <SearchAutocomplete
+        :items="this.info"
+      />
+    </header>
 </template>
 
 <script>
 import axios from 'axios'
 
 // import HelloWorld from './components/HelloWorld.vue'
-// import Home from './components/Home.vue';
+import HeaderNav from './components/HeaderNav.vue';
 import SearchAutocomplete from './components/SearchAutocomplete.vue';
 
 export default {
@@ -21,7 +22,8 @@ export default {
     }
   },
   components: {
-    SearchAutocomplete
+    SearchAutocomplete,
+    HeaderNav
   },
   mounted () {
     axios
@@ -44,12 +46,23 @@ export default {
 </script>
 
 <style>
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #262626;
 }
+
+header {
+  background-color: #4c873c;
+  margin: 0;
+  padding: 0.8rem 1.5rem;
+}
+
 </style>

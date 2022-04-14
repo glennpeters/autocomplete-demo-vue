@@ -8,7 +8,7 @@ Using an <a href="https://www.digitalocean.com/community/tutorials/vuejs-vue-aut
 
 I had implemented autocomplete from scratch previously, but it's general good practice to use existing code to speed things up.
 
-Customized to hide the autocomplete on an empty search field.
+Customized to hide the autocomplete on an empty search field, as well as hiding with empty (post-filtered) results.
 
 Added fetch to SWAPI with axios. 
 

@@ -7,6 +7,7 @@
         @keydown.up="onArrowUp"
         @keydown.enter="onEnter"
         type="text"
+        placeholder="What are you looking for?"
     />
     <ul
         v-show="isOpen"
@@ -59,7 +60,7 @@ export default {
         console.log("onChange: searchTerm = ", this.searchTerm);
         this.filterResults();
         // this.isOpen = true;
-        this.isOpen = (this.searchTerm !== '');
+        this.isOpen = (this.searchTerm !== '' && this.results.length);
     },
     setResult(result) {
         // console.log("setResult");
@@ -92,6 +93,18 @@ export default {
 </script>
 
 <style>
+    input[type="text"] {
+        background-color: #fff; 
+        padding: 0.8rem;
+        width: 90%;
+        border: none;
+        border-radius: 0.2rem;
+    }
+
+    ::placeholder {
+        color: #999;
+    }
+
   .autocomplete {
     position: relative;
   }
@@ -102,20 +115,26 @@ export default {
     border: 1px solid #eeeeee;
     height: 120px;
     min-height: 1em;
-    max-height: 6em;    
+    max-height: 7.2em;    
     overflow: auto;
+    background-color: #fff;
+    position: absolute;
+    /* Ideally, these would be directly tied to the padding and spacing of the input, probably with variables */
+    top: 2.7rem;
+    left: 1.7rem;
+    right: 1.7rem;
   }
 
   .autocomplete-result {
     list-style: none;
     text-align: left;
-    padding: 4px 2px;
+    padding: 0.5rem 0.6rem;
     cursor: pointer;
   }
 
   .autocomplete-result.is-active,
   .autocomplete-result:hover {
-    background-color: #4AAE9B;
+    background-color: #4c873c;
     color: white;
   }
 </style>
