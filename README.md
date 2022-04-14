@@ -10,6 +10,8 @@ I had implemented autocomplete from scratch previously, but it's general good pr
 
 Customized to hide the autocomplete on an empty search field.
 
+Added fetch to SWAPI with axios. 
+
 Short term TODO:
 - [x] Don't display autofill on blank input
 - [ ] https://www.npmjs.com/package/vue-axios
@@ -38,6 +40,7 @@ We are looking for a responsive site (tablet and mobile views) with some simple 
 ### Implementation Specifics
 - [ ] Write up documentation
 - [X] Static autocomplete starter
+- [X] Dynamic autocomplete -- initial data fetch for data 
 
 
 ## Project setup
