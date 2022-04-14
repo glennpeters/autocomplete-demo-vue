@@ -1,14 +1,14 @@
 <template>
   <nav>
     <figure>
-      <a href="#"><img src="@/assets/img/logo.png" /></a>
+      <a href="/"><img src="@/assets/img/logo.png" /></a>
     </figure>
 
     <ul>
-      <li><a href="#"><img src="@/assets/ic/white/ic_search.png" /></a></li>
-      <li><a href="#"><img src="@/assets/ic/white/ic_shopping_cart.png" /></a></li>
-      <li><a href="#"><img src="@/assets/ic/white/ic_person.png" /></a></li>
-      <li><a href="#"><img src="@/assets/ic/white/ic_menu.png" /></a></li>
+      <li><a @click.stop.prevent="clickSearch"><img src="@/assets/ic/white/ic_search.png" /></a></li>
+      <li><a @click.stop.prevent="clickCart"><img src="@/assets/ic/white/ic_shopping_cart.png" /></a></li>
+      <li><a @click.stop.prevent="clickUser"><img src="@/assets/ic/white/ic_person.png" /></a></li>
+      <li><a @click.stop.prevent="clickMenu"><img src="@/assets/ic/white/ic_menu.png" /></a></li>
     </ul>
   </nav>
 </template>
@@ -16,9 +16,45 @@
 <script>
 export default {
   name: 'HeaderNav',
-  props: {
-    msg: String
-  }
+  // props: {
+  //   msg: String
+  // },
+  methods: {
+    clickSearch(event) {
+        if (event) {
+          event.preventDefault()
+        }
+        console.log('Do (advanced?) search stuff');
+        // return false;
+    },
+    clickCart(event) {
+        if (event) {
+          event.preventDefault()
+        }
+
+        console.log('Do shopping cart stuff');
+
+        // return false;
+    },
+    clickUser(event) {
+        if (event) {
+          event.preventDefault()
+        }
+
+        console.log('Do login stuff, probably');
+
+        // return false;
+    },
+    clickMenu(event) {
+        if (event) {
+          event.preventDefault()
+        }
+
+        console.log('Do menu stuff (show/hide)');
+
+        // return false;
+    },
+  },
 }
 </script>
 
