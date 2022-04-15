@@ -18,15 +18,27 @@
       {label: 'Account', url: '/account', icon: 'account'},
       {label: 'Branch Locations', url: '/branches', icon: 'branches'},
     ]"/>
+    <ProductMarkets headerTitle="Product Markets"
+    :markets="[
+      {label: 'DataComm', url: '/markets/datacomm', img: 'datacomm'},
+      {label: 'HVAC', url: '/markets/hvac', img: 'hvac'},
+      {label: 'Industrial', url: '/markets/industrial', img: 'industrial'},
+      {label: 'Lighting', url: '/markets/lighting', img: 'lighting'},
+      {label: 'Energy Efficiency', url: '/markets/energyefficiency', img: 'energy'},
+      {label: 'Utility', url: '/markets/utility', img: 'utility'},
+    ]"/>
+
 </template>
 
 <script>
 import axios from 'axios'
 
-// import HelloWorld from './components/HelloWorld.vue'
 import HeaderNav from './components/HeaderNav.vue';
-import QuickLinks from './components/QuickLinks.vue';
 import SearchAutocomplete from './components/SearchAutocomplete.vue';
+
+import QuickLinks from './components/QuickLinks.vue';
+import ProductMarkets from './components/ProductMarkets.vue';
+
 
 export default {
   name: 'App',
@@ -39,6 +51,7 @@ export default {
     SearchAutocomplete,
     HeaderNav,
     QuickLinks,
+    ProductMarkets,
   },
   mounted () {
     axios

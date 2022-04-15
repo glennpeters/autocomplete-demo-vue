@@ -2,7 +2,7 @@
 
 Building towards the guidelines below, limiting the scope because of external time pressures.
 
-This is a demonstration of principles, not an attempt to manage pixel-perfect design.
+This is a demonstration of principles, not an attempt to manage pixel-perfect design.  Developed and tested in Chrome.  For production code, I'd be testing in other browsers.  
 
 Using an <a href="https://www.digitalocean.com/community/tutorials/vuejs-vue-autocomplete-component#step-1-setting-up-the-project">Autocomplete tutorial for time management</a>.
 
@@ -16,6 +16,8 @@ Things that could be done for scalability or usability, skipping for time:
 * General pixel-perfect rabbit holes
 * Moving Header items to general Header component
 * Make Search icon in the search bar a positioned submit button
+* Quicklinks Desktop spacing/lines
+* Global container system for consistent butters, etc.
 
 Short term TODO:
 - [x] Don't display autofill on blank input
@@ -24,8 +26,10 @@ Short term TODO:
 - [X] Mobile only quick links arrows
 
 Some Issues:
+* Unknown font
 * Renamed "ic_chat - active.png" to "ic_chat_active.png"
 * Icons change between mobile and desktop for Live Help -- Noted that the green icon is labelled "Active", created an .active class style to differentiate (Also, the black and green icons are flipped)
+* There's a live Help button with icon at the bottom of the design, that would probably be a better place for the green icon, would check with designer.
 * Black Account icon missing.  Inverted white "person" icon
 
 
@@ -48,7 +52,7 @@ We are looking for a responsive site (tablet and mobile views) with some simple 
 - [X] Do not use a CSS framework (Bootstrap, Bulma, Foundation, etc.)(Normalize.css is okay to use).
 - [ ] Make sure the application can be installed and built (npm etc).
 - [X] We are looking for structure and how you would build something as if you were planning for a scalable application. 
-- [ ] We would like to see custom media queries.
+- [X] We would like to see custom media queries.
 
 ### Implementation Specifics
 - [ ] Write up documentation
