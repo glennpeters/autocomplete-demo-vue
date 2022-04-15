@@ -108,6 +108,12 @@ export default {
         border: none;
         border-radius: 0.2rem;
         padding-right: 3rem;
+
+        /* Mobile only quick links arrows */
+        /* Setting a default because no icon among icons would be weirder than a duplicate */
+        background-image: url('~@/assets/ic/black/ic_search.png');
+        background-repeat: no-repeat;
+        background-position: calc(100% - 16px) center;
     }
 
     ::placeholder {

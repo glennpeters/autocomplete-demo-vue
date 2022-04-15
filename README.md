@@ -12,8 +12,10 @@ Customized to hide the autocomplete on an empty search field, as well as hiding 
 
 Added fetch to SWAPI with axios. Note: It's just doing an initial fetch.  There's a lot of fine tuning that could be done going into the weeds with timing of requests and requesting the specific search term incrementally, but that's outside the scope of this.
 
-Things that could be done for scalability, skipping for time:
+Things that could be done for scalability or usability, skipping for time:
+* General pixel-perfect rabbit holes
 * Moving Header items to general Header component
+* Make Search icon in the search bar a positioned submit button
 
 Short term TODO:
 - [x] Don't display autofill on blank input
