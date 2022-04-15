@@ -1,7 +1,7 @@
 <template>
   <nav>
     <figure>
-      <a href="/"><img src="@/assets/img/logo.png" /></a>
+      <a href="/"><img src="@/assets/img/logo.png" alt="Platt" /></a>
     </figure>
 
     <ul>
