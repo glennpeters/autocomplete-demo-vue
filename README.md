@@ -12,9 +12,20 @@ Customized to hide the autocomplete on an empty search field, as well as hiding 
 
 Added fetch to SWAPI with axios. Note: It's just doing an initial fetch.  There's a lot of fine tuning that could be done going into the weeds with timing of requests and requesting the specific search term incrementally, but that's outside the scope of this.
 
+Things that could be done for scalability, skipping for time:
+* Moving Header items to general Header component
+
 Short term TODO:
 - [x] Don't display autofill on blank input
 - [X] https://www.npmjs.com/package/vue-axios
+- [ ] Search bar search icon
+- [ ] Mobile only quick links arrows
+
+Some Issues:
+* Renamed "ic_chat - active.png" to "ic_chat_active.png"
+* Icons change between mobile and desktop for Live Help -- Noted that the green icon is labelled "Active", created an .active class style to differentiate (Also, the black and green icons are flipped)
+* Black Account icon missing.  Inverted white "person" icon
+
 
 
 

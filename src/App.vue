@@ -1,12 +1,23 @@
 <template>
     <header>
-      <div class="header-inner">
+      <div class="container header-nav">
         <HeaderNav />
+      </div>
+      <div class="container">
         <SearchAutocomplete
           :items="this.info"
         />
       </div>
     </header>
+    <QuickLinks :links="[
+      {label: 'Shop all categories', url: '/categories', icon: 'categories'},
+      {label: 'My Catalog', url: '/mycatalog', icon: 'mycatalog'},
+      {label: 'My List', url: '/mylist', icon: 'mylist'},
+      {label: 'Live Help', url: '/livehelp', icon: 'livehelp'},
+      {label: 'PIM', url: '/pim', icon: 'pim'},
+      {label: 'Account', url: '/account', icon: 'account'},
+      {label: 'Branch Locations', url: '/branches', icon: 'branches'},
+    ]"/>
 </template>
 
 <script>
@@ -14,6 +25,7 @@ import axios from 'axios'
 
 // import HelloWorld from './components/HelloWorld.vue'
 import HeaderNav from './components/HeaderNav.vue';
+import QuickLinks from './components/QuickLinks.vue';
 import SearchAutocomplete from './components/SearchAutocomplete.vue';
 
 export default {
@@ -25,7 +37,8 @@ export default {
   },
   components: {
     SearchAutocomplete,
-    HeaderNav
+    HeaderNav,
+    QuickLinks,
   },
   mounted () {
     axios
@@ -69,13 +82,20 @@ html, body {
 header {
   background-color: #4c873c;
   margin: 0;
-  padding: 1rem 1.5rem;
+  padding: 1rem 0;
 }
 
-.header-inner {
-    width: 100%;
-    margin: 0;
-    padding: 0px;
+.container {
+  width: 100%;
+  margin: 0;
+  /* padding: 0px; */
+  padding: 0 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    .container.header-nav {
+        padding: 0 0.5rem;
+    }
 }
 
 </style>
