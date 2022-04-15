@@ -64,7 +64,7 @@ li:first-of-type {
 }
 
 li:last-of-type {
-    margin-bottom: 0;
+    border-bottom: none;
 }
 
 a {
@@ -130,6 +130,7 @@ a {
         text-align: center;
         width: 100%;
         background-color: #999;
+        padding-bottom: 1px;
     }
 
     li {

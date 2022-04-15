@@ -20,8 +20,8 @@ Things that could be done for scalability or usability, skipping for time:
 Short term TODO:
 - [x] Don't display autofill on blank input
 - [X] https://www.npmjs.com/package/vue-axios
-- [ ] Search bar search icon
-- [ ] Mobile only quick links arrows
+- [X] Search bar search icon
+- [X] Mobile only quick links arrows
 
 Some Issues:
 * Renamed "ic_chat - active.png" to "ic_chat_active.png"
